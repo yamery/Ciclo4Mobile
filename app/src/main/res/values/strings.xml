@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FeedMe App</string>
+    <string name="register_here">Registrarse Aquí</string>
+    <string name="login_message">O use una de las siguientes opciones</string>
+    <string name="password">Contraseña</string>
+    <string name="feedme_an_app">FeedMe an App</string>
+    <string name="user">Usuario</string>
+    <string name="login">Ingresar</string>
 </resources>

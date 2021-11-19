@@ -1,12 +1,12 @@
-package com.tecnidev.feedmeapp.controlador;
+//package com.tecnidev.feedmeapp.controlador;
 
-import com.tecnidev.feedmeapp.Login;
-import com.tecnidev.feedmeapp.interfaz.LoginInterface;
+//import com.tecnidev.feedmeapp.Login;
+//import com.tecnidev.feedmeapp.interfaz.LoginInterface;
 
-public class ControladorLogin implements LoginInterface.Controlador{
-    private final LoginInterface.View view;
+public class ControladorLogin implements LoginIterface.Controlador{
+    private final LoginIterface.View view;
 
-    public ControladorLogin (LoginInterface.View view){
+    public ControladorLogin (LoginIterface.View view){
         this.view = view;
     }
 
@@ -22,4 +22,16 @@ public class ControladorLogin implements LoginInterface.Controlador{
             return true;
         }
     }
+
+    @Override
+    public Boolean usuarioPermitido(String usuario, String clave) {
+        if (usuario.equals("prueba")) {
+            if (clave.equals("12345")){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }

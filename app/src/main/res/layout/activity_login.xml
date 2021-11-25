@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRegistrarse" />
 
-    <EditText
+     <EditText
         android:id="@+id/editUsuario"
         android:layout_width="335dp"
         android:layout_height="50dp"

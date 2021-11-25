@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.tecnidev.feedmeapp.controlador.ControladorLogin;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, Registro.class);
         startActivity(intent);
+
+
     }
 }

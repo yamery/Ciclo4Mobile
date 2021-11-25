@@ -1,7 +1,7 @@
-//package com.tecnidev.feedmeapp.controlador;
+package com.tecnidev.feedmeapp.controlador;
 
-//import com.tecnidev.feedmeapp.Login;
-//import com.tecnidev.feedmeapp.interfaz.LoginInterface;
+import com.tecnidev.feedmeapp.Login;
+import com.tecnidev.feedmeapp.interfaz.LoginIterface;
 
 public class ControladorLogin implements LoginIterface.Controlador{
     private final LoginIterface.View view;

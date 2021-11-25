@@ -1,4 +1,4 @@
-//package com.tecnidev.feedmeapp.interfaz;
+package com.tecnidev.feedmeapp.interfaz;
 
 public interface LoginIterface {
     interface View {

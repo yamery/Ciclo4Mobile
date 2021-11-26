@@ -1,12 +1,21 @@
 package com.tecnidev.feedmeapp.controlador;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+
 import com.tecnidev.feedmeapp.interfaz.LoginIterface;
+import com.tecnidev.feedmeapp.R;
 
-public class ControladorLogin implements LoginIterface.Controlador{
-    private final LoginIterface.View view;
+public class LoginActivity extends AppCompatActivity implements LoginIterface.Controlador, View.OnClickListener {
 
-    public ControladorLogin (LoginIterface.View view){
-        this.view = view;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
     }
 
     @Override
@@ -32,5 +41,8 @@ public class ControladorLogin implements LoginIterface.Controlador{
         return false;
     }
 
+    @Override
+    public void onClick(View v) {
 
+    }
 }

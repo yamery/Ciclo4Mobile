@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">FeedMe App</string>
+    <string name="login">Ingresar</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="register_here">Registrarse Aquí</string>
+    <string name="login_message">O use una de las siguientes opciones</string>
+    <string name="facebook">FaceBook</string>
+    <string name="gmail">Gmail</string>
+    <string name="logo">Logo</string>
+    <string name="create_account">Crear una cuenta</string>
+    <string name="create_account_name">Nombres</string>
+    <string name="create_account_surname">Apellidos</string>
+    <string name="create_account_sex">Sexo</string>
+    <string-array name="sex_array">
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="create_account_address">Dirección</string>
+    <string name="create_account_email">Correo</string>
+    <string name="create_account_photo">Foto</string>
+    <string name="create_account_take_photo">Tomar foto</string>
+    <string name="create_account_city">Ciudad</string>
+    <string name="create_account_mobile">Celular</string>
+    <string name="create_account_user">Usuario</string>
+    <string name="create_account_password">Contraseña</string>
+    <string name="create_account_button">Crear mi cuenta</string>
 </resources>

@@ -236,7 +236,7 @@
         android:importantForAutofill="no" />
 
     <TextView
-        android:labelFor="@id/editUsuario"
+        android:labelFor="@id/editRegisterUsuario"
         android:id="@+id/textViewUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -248,7 +248,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editCiudad" />
 
     <EditText
-        android:id="@+id/editUsuario"
+        android:id="@+id/editRegisterUsuario"
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_marginStart="45dp"
@@ -261,7 +261,7 @@
         tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:labelFor="@+id/editClave"
+        android:labelFor="@+id/editRegisterClave"
         android:id="@+id/textViewClave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editPhone" />
 
     <EditText
-        android:id="@+id/editClave"
+        android:id="@+id/editRegisterClave"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -281,7 +281,7 @@
         android:ems="7"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        app:layout_constraintStart_toEndOf="@+id/editUsuario"
+        app:layout_constraintStart_toEndOf="@+id/editRegisterUsuario"
         app:layout_constraintTop_toBottomOf="@+id/textViewClave"
         tools:ignore="DuplicateSpeakableTextCheck" />
 

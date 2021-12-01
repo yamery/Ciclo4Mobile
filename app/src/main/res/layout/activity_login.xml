@@ -93,11 +93,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
+        android:background="@color/trasparente"
         android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@color/material_on_surface_stroke"
+
         android:text="Ingresar"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"

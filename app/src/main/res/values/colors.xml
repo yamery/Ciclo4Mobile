@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#FFFAFF00</color>
     <color name="secondary">#FCFF5C00</color>
+    <color name="trasparente">#00000000</color>
+    <color name="Blue">#2196F3</color>
+
 </resources>

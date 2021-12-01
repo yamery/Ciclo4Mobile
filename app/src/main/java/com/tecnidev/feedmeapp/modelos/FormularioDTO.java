@@ -1,4 +1,4 @@
-//package com.tecnidev.feedmeapp.modelos;
+package com.tecnidev.feedmeapp.modelos;
 
 public class FormularioDTO {
     private String editNombres;

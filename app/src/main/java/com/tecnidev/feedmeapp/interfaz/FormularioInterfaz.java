@@ -1,7 +1,7 @@
-//package com.tecnidev.feedmeapp.interfaz;
+package com.tecnidev.feedmeapp.interfaz;
 
 
-//import com.tecnidev.feedmeapp.modelos.FormularioDTO;
+import com.tecnidev.feedmeapp.modelos.FormularioDTO;
 
 public interface FormularioInterfaz {
 

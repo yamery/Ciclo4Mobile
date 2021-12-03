@@ -1,8 +1,8 @@
-//package com.tecnidev.feedmeapp.controlador;
+package com.tecnidev.feedmeapp.controlador;
 
-//import com.tecnidev.feedmeapp.interfaz.FormularioInterfaz;
-//import com.tecnidev.feedmeapp.modelos.FormularioDTO;
-//import com.tecnidev.feedmeapp.modelos.UsuarioDto;
+import com.tecnidev.feedmeapp.interfaz.FormularioInterfaz;
+import com.tecnidev.feedmeapp.modelos.FormularioDTO;
+import com.tecnidev.feedmeapp.modelos.UsuarioDto;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,17 +21,9 @@ public class ControladorFormulario implements FormularioInterfaz.Controlador {
         Pattern pattern = Pattern
                 .compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
                         + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
-        Pattern pattern2 = Pattern.compile("[A-Za-z]{8,}");
-
-        Pattern pattern3 = Pattern.compile("/[0-9][a-zA-Z]{8}/");
-        Pattern pattern4 = Pattern.compile("^[\\\\p{Alnum}]{8,120}$");
 
         Matcher mather = pattern.matcher(formularioDTO.getEditCorreo());
-        Matcher mather2 = pattern2.matcher(formularioDTO.getEditNombres());
-        Matcher mather3 = pattern4.matcher(formularioDTO.getEditUsuario());
-        Matcher mather4 = pattern2.matcher(formularioDTO.getEditApellidos());
-        Matcher mather5 = pattern4.matcher(formularioDTO.getEditPassword());
-        Matcher mather6 = pattern3.matcher(formularioDTO.getEditNombres());
+
 
 
         if((formularioDTO.getEditNombres().trim().isEmpty())){
@@ -61,7 +53,6 @@ public class ControladorFormulario implements FormularioInterfaz.Controlador {
         }else if((formularioDTO.getEditPassword().trim().length()<=5)){
             return false;
         }
-
         else{
             UsuarioDto usuario = UsuarioDto.getInstance();
             usuario.setNombre(formularioDTO.getEditNombres());
@@ -75,10 +66,6 @@ public class ControladorFormulario implements FormularioInterfaz.Controlador {
             usuario.setPassword(formularioDTO.getEditPassword());
             return true;
         }
-
-
-
-
     }
 
     @Override
@@ -89,7 +76,5 @@ public class ControladorFormulario implements FormularioInterfaz.Controlador {
         }else{
             return false;
         }
-
-
     }
 }

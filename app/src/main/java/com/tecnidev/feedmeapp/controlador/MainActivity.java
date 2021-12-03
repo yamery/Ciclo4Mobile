@@ -1,11 +1,11 @@
-package com.tecnidev.feedmeapp;
+package com.tecnidev.feedmeapp.controlador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.tecnidev.feedmeapp.controlador.ControladorLogin;
+import com.tecnidev.feedmeapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,9 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
-
-
     }
 }

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/primary_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/wendy_one"
+        android:text="@string/create_account"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:labelFor="@id/editNombres"
+        android:text="@string/create_account_name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="16"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombres"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textViewApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:labelFor="@id/editApellidos"
+        android:text="@string/create_account_surname"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombres" />
+
+    <EditText
+        android:id="@+id/editApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="16"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewApellidos"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:labelFor="@id/spinnerSexo"
+        android:text="@string/create_account_sex"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidos" />
+
+    <Spinner
+        android:id="@+id/spinnerSexo"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:entries="@array/sex_array"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewSexo"
+        app:layout_constraintTop_toBottomOf="@+id/editApellidos"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textViewDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:labelFor="@id/editDireccion"
+        android:text="@string/create_account_address"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSexo" />
+
+    <EditText
+        android:id="@+id/editDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="16"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDireccion"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:labelFor="@id/editCorreo"
+        android:id="@+id/textViewCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account_email"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDireccion" />
+
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="16"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:labelFor="@id/imageViewFoto"
+        android:id="@+id/textViewFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_account_photo"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCorreo" />
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/create_account_photo"
+        app:layout_constraintStart_toEndOf="@+id/textViewFoto"
+        app:layout_constraintTop_toBottomOf="@+id/editCorreo"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:background="@color/transparent"
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/create_account_take_photo"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFoto"
+        app:layout_constraintTop_toBottomOf="@+id/editCorreo" />
+
+    <TextView
+        android:labelFor="@id/textViewCiudad"
+        android:id="@+id/textViewCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account_city"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFoto" />
+
+    <EditText
+        android:id="@+id/editCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="7"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCiudad"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:labelFor="@id/textViewCelular"
+        android:id="@+id/textViewCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account_mobile"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textViewCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFoto" />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="7"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@+id/editCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCelular"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:labelFor="@id/editRegisterUsuario"
+        android:id="@+id/textViewUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account_user"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCiudad" />
+
+    <EditText
+        android:id="@+id/editRegisterUsuario"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="7"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:labelFor="@+id/editRegisterClave"
+        android:id="@+id/textViewClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/create_account_password"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textViewUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
+
+    <EditText
+        android:id="@+id/editRegisterClave"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="7"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/editRegisterUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClave"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:background="@color/transparent"
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/create_account_button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

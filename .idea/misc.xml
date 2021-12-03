@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/primary_background.xml" value="0.2203125" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/rounded_edittext.xml" value="0.2203125" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_main.xml" value="0.18795289855072464" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/Users/Andrengineer/AndroidStudioProjects/FeedMeApp/app/src/main/res/drawable/gradient.xml" value="0.2671875" />
         <entry key="..\:/Users/Andrengineer/AndroidStudioProjects/FeedMeApp/app/src/main/res/drawable/gradient_inverted.xml" value="0.2671875" />
         <entry key="..\:/Users/Andrengineer/AndroidStudioProjects/FeedMeApp/app/src/main/res/font/.xml" value="0.28125" />

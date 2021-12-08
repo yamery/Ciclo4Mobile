@@ -92,7 +92,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public Boolean validarFormulario(FormularioDTO formularioDTO) {
         // Patterns to match form fields
-        Pattern patternCorreo = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+        Pattern patternCorreo = Pattern.compile("^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@"
                         + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
         Pattern patternNombres = Pattern.compile("[A-Za-z]{8,}");
         Pattern patternUsuario = Pattern.compile("/[0-9][a-zA-Z]{8}/");
@@ -150,9 +150,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public Boolean usuarioGuardarUsuario(FormularioDTO formularioDTO) {
-        if(formularioDTO!=null){
-            return true;
-        }
-        return false;
+        return formularioDTO != null;
     }
 }

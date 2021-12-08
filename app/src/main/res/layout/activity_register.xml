@@ -168,10 +168,11 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:contentDescription="@string/create_account_photo"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/textViewFoto"
         app:layout_constraintTop_toBottomOf="@+id/editCorreo"
         tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/ic_user_photo" />
 
     <Button
         android:background="@color/transparent"

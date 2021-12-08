@@ -3,7 +3,9 @@ package com.tecnidev.feedmeapp.controlador;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,6 +38,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     EditText telefono;
     EditText usuario;
     EditText clave;
+    Button btnFoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +56,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         telefono = findViewById(R.id.editPhone);
         usuario = findViewById(R.id.editRegisterUsuario);
         clave = findViewById(R.id.editPassword);
+        btnFoto = findViewById(R.id.btnFoto);
+
+        // Take a picture for user profile
+        btnFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCamera();
+            }
+        });
 
         // Action for Register
         registerButton = findViewById(R.id.btnGuardar);
@@ -151,5 +163,23 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public Boolean usuarioGuardarUsuario(FormularioDTO formularioDTO) {
         return formularioDTO != null;
+    }
+
+    // Open camera
+    private void openCamera(){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (intent.resolveActivity(getPackageManager()) != null){
+            startActivityForResult(intent, 1);
+        }
+    }
+
+    // Result for picture taken from camera and set form picture
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1 && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imgBitmap = (Bitmap) extras.get("data");
+            foto.setImageBitmap(imgBitmap);
+        }
     }
 }

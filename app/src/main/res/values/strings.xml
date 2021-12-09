@@ -36,4 +36,5 @@
     <string name="food_expiration_tag">Vence</string>
     <string name="food_price_tag">Precio</string>
     <string name="food_button_details">Ver detalles</string>
+    <string name="food_publish">Publicar</string>
 </resources>

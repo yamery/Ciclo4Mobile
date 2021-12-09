@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.tecnidev.feedmeapp.R;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemReselectedListener {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     // Shared preferences to use application
     SharedPreferences sharedPreferences;
@@ -75,24 +75,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     @Override
-    public void onNavigationItemReselected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Swap fragment according to clicked menu item
         switch (item.getItemId()){
             case R.id.home:
                 loadFragment(homeFragment);
-                break;
+                return true;
 
             case R.id.list:
                 loadFragment(foodsFragment);
-                break;
+                return true;
 
             case R.id.add:
                 loadFragment(addFoodFragment);
-                break;
+                return true;
 
             case R.id.userMenu:
                 loadFragment(userFragment);
-                break;
+                return true;
         }
+        return false;
     }
 }

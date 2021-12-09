@@ -36,14 +36,14 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
     }
 
     // Attributes
-    public List<PublicacionesDTO> publicacionesDTOList;
+    public List<PublicacionesDTO> publicacionesList;
 
     // Constructor for FoodsAdapter
     public FoodsAdapter(List<PublicacionesDTO> publicacionesDTOList) {
-        this.publicacionesDTOList = publicacionesDTOList;
+        this.publicacionesList = publicacionesDTOList;
     }
 
-    // Inflate(put a layout into another) a new item of content to list
+    // Inflate(put a layout into another) a new item of content to the list
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -57,17 +57,17 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // TODO: To implement bitmap for each image from "publicacionesDTO" model
         //holder.imagen.setImageResource(publicacionesDTOList.get(position));
-        holder.nombreAlimento.setText(publicacionesDTOList.get(position).getNombreAlimento());
-        holder.tipoAlimento.setText(publicacionesDTOList.get(position).getTipoAlimento());
-        holder.fechaVencimiento.setText(publicacionesDTOList.get(position).getFechaVencimiento());
+        holder.nombreAlimento.setText(publicacionesList.get(position).getNombreAlimento());
+        holder.tipoAlimento.setText(publicacionesList.get(position).getTipoAlimento());
+        holder.fechaVencimiento.setText(publicacionesList.get(position).getFechaVencimiento());
         // Set sub-string of descripcion to 50 letters
-        holder.descripcion.setText(publicacionesDTOList.get(position).getDescripcion().substring(0, 50));
-        holder.precio.setText(publicacionesDTOList.get(position).getPrecio());
+        holder.descripcion.setText(publicacionesList.get(position).getDescripcion().substring(0, 50));
+        holder.precio.setText(publicacionesList.get(position).getPrecio());
     }
 
     // Determinates amount of items to process them
     @Override
     public int getItemCount() {
-        return publicacionesDTOList.size();
+        return publicacionesList.size();
     }
 }

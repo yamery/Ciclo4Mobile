@@ -22,9 +22,8 @@ public class FoodsFragment extends Fragment {
     private RecyclerView recyclerView;
     private FoodsAdapter foodsAdapter;
 
-    // Constructor
+    // Required empty public constructor
     public FoodsFragment() {
-        // Required empty public constructor
     }
 
     @Override

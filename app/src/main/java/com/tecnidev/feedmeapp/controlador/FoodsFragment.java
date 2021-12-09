@@ -3,58 +3,39 @@ package com.tecnidev.feedmeapp.controlador;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.tecnidev.feedmeapp.R;
+import com.tecnidev.feedmeapp.modelo.PublicacionesDTO;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FoodsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class FoodsFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    // Attributes
+    private RecyclerView recyclerView;
+    private FoodsAdapter foodsAdapter;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
+    // Constructor
     public FoodsFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FoodsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static FoodsFragment newInstance(String param1, String param2) {
-        FoodsFragment fragment = new FoodsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+        // Load data to RecyclerView from Adapter
+        recyclerView = getView().findViewById(R.id.recyclerViewFoods);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        foodsAdapter = new FoodsAdapter(obtenerPublicaciones());
+        recyclerView.setAdapter(foodsAdapter);
     }
 
     @Override
@@ -62,5 +43,11 @@ public class FoodsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_foods, container, false);
+    }
+
+    public List<PublicacionesDTO> obtenerPublicaciones(){
+        List<PublicacionesDTO> publicaciones = new ArrayList<>();
+        // TODO: Fill list from database
+        return publicaciones;
     }
 }

@@ -7,12 +7,15 @@
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/ic_food.xml" value="0.2203125" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/primary_background.xml" value="0.2203125" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/rounded_edittext.xml" value="0.2203125" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/rounded_item.xml" value="0.2203125" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/drawable/user.xml" value="0.2203125" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_main.xml" value="0.18795289855072464" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/fragment_foods.xml" value="0.17255434782608695" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/fragment_user.xml" value="0.17708333333333334" />
+        <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/layout/item_food.xml" value="0.33" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/menu/navigation.xml" value="0.20416666666666666" />
         <entry key="..\:/Proyectos/Android/Ciclo4Mobile/app/src/main/res/menu/user.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Andrengineer/AndroidStudioProjects/FeedMeApp/app/src/main/res/drawable/gradient.xml" value="0.2671875" />

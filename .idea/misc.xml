@@ -17,10 +17,16 @@
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/gradient.xml" value="0.23692307692307693" />
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/gradient_inverted.xml" value="0.240625" />
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.240625" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/primary_background.xml" value="0.240625" />
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/rounded_edittext.xml" value="0.240625" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/drawable/secondary_gradient.xml" value="0.240625" />
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/layout/menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/menu/menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/menu/menu_bottom.xml" value="0.25" />
+        <entry key="..\:/Users/ivanp/AndroidStudioProjects/Ciclo4Mobile/app/src/main/res/menu/menu_top.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

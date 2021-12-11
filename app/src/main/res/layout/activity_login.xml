@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_inverted"
-    tools:context=".Login">
+    android:background="@drawable/secondary_gradient"
+    tools:context=".controlador.LoginActivity">
 
     <TextView
         android:id="@+id/txtRegistrarse"

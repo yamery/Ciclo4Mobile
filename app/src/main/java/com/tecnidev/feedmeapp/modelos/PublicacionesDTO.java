@@ -3,32 +3,63 @@
 import java.util.Date;
 
 public class PublicacionesDTO {
-    private String nombre;
-    private String urlImagen;
-    private Date fechaVencimiento;
+    private String id;
+    private String comentario;
+    private String fecha;
+    private String nombre_alimento;
+    private String tipo_alimento;
 
-    public String getNombre() {
-        return nombre;
+    public PublicacionesDTO (){
+
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public PublicacionesDTO (String id, String comentario,String fecha, String nombre_alimento,String tipo_alimento){
+        this.id = id;
+        this.comentario = comentario;
+        this.fecha = fecha;
+        this.nombre_alimento = nombre_alimento;
+        this.tipo_alimento = tipo_alimento;
+
     }
 
-    public String getUrlImagen() {
-        return urlImagen;
+    public String getNombre_alimento() {
+        return nombre_alimento;
     }
 
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
+    public void setNombre_alimento(String nombre_alimento) {
+        this.nombre_alimento = nombre_alimento;
     }
 
-    public Date getFechaVencimiento() {
-        return fechaVencimiento;
+    public String getTipo_alimento() {
+        return tipo_alimento;
     }
 
-    public void setFechaVencimiento(Date fechaVencimiento) {
-        this.fechaVencimiento = fechaVencimiento;
+    public void setTipo_alimento(String tipo_alimento) {
+        this.tipo_alimento = tipo_alimento;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
 

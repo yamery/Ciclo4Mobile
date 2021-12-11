@@ -5,15 +5,19 @@
 //import com.tecnidev.feedmeapp.interfaz.InicioInterface;
 
 
+import java.util.List;
+
 public class ControladorInicio implements InicioInterface.Controlador {
 
-    InicioInterface.Controlador controlador;
-    InicioInterface.View view;
+    //InicioInterface.Controlador controlador;
+
+    private final InicioInterface.View view;
 
     public ControladorInicio (InicioInterface.View view){
         this.view = view;
 
     }
+
 
 
     @Override
@@ -26,4 +30,7 @@ public class ControladorInicio implements InicioInterface.Controlador {
 
 
     }
+
+
+
 }

@@ -26,4 +26,5 @@
     <string name="create_account_user">Usuario</string>
     <string name="create_account_password">Contraseña</string>
     <string name="create_account_button">Crear mi cuenta</string>
+    <string name="inicio">Inicio</string>
 </resources>
